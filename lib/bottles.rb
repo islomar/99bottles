@@ -22,9 +22,14 @@ class Bottles
         all_verses = ""
         for number_of_bottles in max_number_of_bottles.downto(min_number_of_bottles) do
             all_verses += verse(number_of_bottles)
-            if number_of_bottles > min_number_of_bottles
-                all_verses += "\n"
-            end
+            all_verses = add_linebreak_if_needed(all_verses, number_of_bottles, min_number_of_bottles)
+        end
+        return all_verses
+    end
+
+    private def add_linebreak_if_needed(all_verses, number_of_bottles, min_number_of_bottles)
+        if number_of_bottles > min_number_of_bottles
+            all_verses += "\n"
         end
         return all_verses
     end
