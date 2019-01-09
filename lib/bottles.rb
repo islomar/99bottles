@@ -18,7 +18,15 @@ class Bottles
         VERSE
     end
 
-    def verses(number_of_bottles1, number_of_bottles2)
-        return verse(number_of_bottles1) + "\n" + verse(number_of_bottles2)
+    def verses(max_number_of_bottles, min_number_of_bottles)
+        all_verses = ""
+        for n in max_number_of_bottles.downto(min_number_of_bottles) do
+            all_verses += verse(n)
+            if n > min_number_of_bottles
+                all_verses += "\n"
+            end
+        end
+        return all_verses
+        #return verse(max_number_of_bottles) + "\n" + verse(min_number_of_bottles)
     end
 end
