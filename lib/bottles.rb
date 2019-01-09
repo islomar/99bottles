@@ -31,10 +31,7 @@ class Bottles
     end
 
     private def verse_delimiter(current_number_of_bottles, min_number_of_bottles)
-        if is_last_verse(current_number_of_bottles, min_number_of_bottles)
-            return NO_LINE
-        end
-        return NEW_EMPTY_LINE
+        return is_last_verse(current_number_of_bottles, min_number_of_bottles)? NO_LINE : NEW_EMPTY_LINE
     end
 
     private def is_last_verse(current_number_of_bottles, min_number_of_bottles)
