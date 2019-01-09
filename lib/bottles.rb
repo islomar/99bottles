@@ -1,4 +1,7 @@
 class Bottles
+    NEW_EMPTY_LINE = "\n"
+    NO_LINE = ""
+
     def verse(number_of_bottles)
         remaining_bottles = number_of_bottles - 1
         if number_of_bottles == 0
@@ -22,16 +25,16 @@ class Bottles
         all_verses = ""
         for current_number_of_bottles in max_number_of_bottles.downto(min_number_of_bottles) do
             all_verses += verse(current_number_of_bottles)
-            all_verses = add_linebreak_if_needed(all_verses, current_number_of_bottles, min_number_of_bottles)
+            all_verses += verse_delimiter(current_number_of_bottles, min_number_of_bottles)
         end
         return all_verses
     end
 
-    private def add_linebreak_if_needed(all_verses, current_number_of_bottles, min_number_of_bottles)
+    private def verse_delimiter(current_number_of_bottles, min_number_of_bottles)
         if is_last_verse(current_number_of_bottles, min_number_of_bottles)
-            return all_verses
+            return NO_LINE
         end
-        return all_verses += "\n"
+        return NEW_EMPTY_LINE
     end
 
     private def is_last_verse(current_number_of_bottles, min_number_of_bottles)
