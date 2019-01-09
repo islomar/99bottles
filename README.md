@@ -8,9 +8,6 @@ Repo for things related with Sandi Metz book "99 bottles of OOP"
 * https://www.rubyguides.com/2018/11/ruby-heredoc/
 
 
-## TO DO
-* Rename HEREDOC to VERSE
-
 ## To share in book club
 ### First session
 * TDD approach?
