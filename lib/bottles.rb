@@ -31,7 +31,7 @@ class Bottles
         end
         return <<~VERSE
             #{number_of_bottles} bottles of beer on the wall, #{number_of_bottles} bottles of beer.
-            Take one down and pass it around, #{number_of_bottles - 1} bottle#{:s if remaining_bottles > 1} of beer on the wall.
+            Take one down and pass it around, #{remaining_bottles} bottle#{:s if remaining_bottles > 1} of beer on the wall.
         VERSE
     end
 
