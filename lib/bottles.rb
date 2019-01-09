@@ -1,6 +1,8 @@
 class Bottles
     NEW_EMPTY_LINE = "\n"
     NO_LINE = ""
+    DEFAULT_MAX_NUMBER_OF_BOTTLES = 99
+    DEFAULT_MIN_NUMBER_OF_BOTTLES = 0
 
     def verse(number_of_bottles)
         remaining_bottles = number_of_bottles - 1
@@ -27,6 +29,10 @@ class Bottles
             all_verses += verse(current_number_of_bottles) + verse_delimiter(current_number_of_bottles, min_number_of_bottles)
         end
         return all_verses
+    end
+
+    def song()
+        return verses(DEFAULT_MAX_NUMBER_OF_BOTTLES, DEFAULT_MIN_NUMBER_OF_BOTTLES)
     end
 
     private def verse_delimiter(current_number_of_bottles, min_number_of_bottles)
