@@ -24,8 +24,7 @@ class Bottles
     def verses(max_number_of_bottles, min_number_of_bottles)
         all_verses = ""
         for current_number_of_bottles in max_number_of_bottles.downto(min_number_of_bottles) do
-            all_verses += verse(current_number_of_bottles)
-            all_verses += verse_delimiter(current_number_of_bottles, min_number_of_bottles)
+            all_verses += verse(current_number_of_bottles) + verse_delimiter(current_number_of_bottles, min_number_of_bottles)
         end
         return all_verses
     end
