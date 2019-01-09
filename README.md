@@ -10,3 +10,14 @@ Repo for things related with Sandi Metz book "99 bottles of OOP"
 
 ## TO DO
 * Rename HEREDOC to VERSE
+
+## To share in book club
+### First session
+* TDD approach?
+* When was it committed? Useful for reproduce the mental reasoning followed.
+* When to remove duplication? Is duplication always bad? 
+    - Duplication of concept vs Duplication of code
+    - DRY vs DAMP
+    - Four rules of simple design
+* When to generalize?
+* What does verses(a, b) really mean? What if b > a? What if only one parameter is passed? What if a == b? What if they are not numbers?
