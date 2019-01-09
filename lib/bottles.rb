@@ -1,4 +1,4 @@
 class Bottles
-    def verse()
+    def verse(number_of_bottles)
     end
 end
