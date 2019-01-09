@@ -20,17 +20,21 @@ class Bottles
 
     def verses(max_number_of_bottles, min_number_of_bottles)
         all_verses = ""
-        for number_of_bottles in max_number_of_bottles.downto(min_number_of_bottles) do
-            all_verses += verse(number_of_bottles)
-            all_verses = add_linebreak_if_needed(all_verses, number_of_bottles, min_number_of_bottles)
+        for current_number_of_bottles in max_number_of_bottles.downto(min_number_of_bottles) do
+            all_verses += verse(current_number_of_bottles)
+            all_verses = add_linebreak_if_needed(all_verses, current_number_of_bottles, min_number_of_bottles)
         end
         return all_verses
     end
 
-    private def add_linebreak_if_needed(all_verses, number_of_bottles, min_number_of_bottles)
-        if number_of_bottles > min_number_of_bottles
-            all_verses += "\n"
+    private def add_linebreak_if_needed(all_verses, current_number_of_bottles, min_number_of_bottles)
+        if is_last_verse(current_number_of_bottles, min_number_of_bottles)
+            return all_verses
         end
-        return all_verses
+        return all_verses += "\n"
+    end
+
+    private def is_last_verse(current_number_of_bottles, min_number_of_bottles)
+        return current_number_of_bottles == min_number_of_bottles
     end
 end
