@@ -19,5 +19,5 @@ Repo for things related with Sandi Metz book "99 bottles of OOP"
     - Duplication of concept vs Duplication of code
     - DRY vs DAMP
     - Four rules of simple design
-* When to generalize?
+* When to generalize? Generalization, duplication and readibility relationships
 * What does verses(a, b) really mean? What if b > a? What if only one parameter is passed? What if a == b? What if they are not numbers?
