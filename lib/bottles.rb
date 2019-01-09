@@ -17,4 +17,8 @@ class Bottles
             Take one down and pass it around, #{number_of_bottles - 1} bottle#{:s if remaining_bottles > 1} of beer on the wall.
         HEREDOC
     end
+
+    def verses(number_of_bottles1, number_of_bottles2)
+        return verse(number_of_bottles1) + "\n" + verse(number_of_bottles2)
+    end
 end
