@@ -12,9 +12,11 @@
 `ruby test/bottles_test.rb`
 
 
-## Complexity metrics
+## Complexity metrics: ABC
 * Run `flog lib/bottles.rb`
 * Above 20 indicate the method may need refactoring, and above 60 is dangerous.
+* http://wiki.c2.com/?AbcMetric
+* http://www.softwarerenovation.com/ABCMetric.pdf
 * https://codeclimate.com/blog/deciphering-ruby-code-metrics/
 * http://jakescruggs.blogspot.com/2008/08/whats-good-flog-score.html
 * http://ruby.sadi.st/Flog.html
