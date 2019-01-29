@@ -1,6 +1,8 @@
 # 99 Bottles of OOP
 * Repo for things related with Sandi Metz book "99 bottles of OOP"
+* https://www.sandimetz.com/99bottles/
 * https://github.com/sandimetz/99bottles
+* https://juanignaciosl.github.io/workshop/2018/09/15/99_bottles_of_oop.html
 
 
 ## Prerequisites
